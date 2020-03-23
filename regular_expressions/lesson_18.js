@@ -1,10 +1,23 @@
 console.log('|');
 console.log('| EXECUTION FROM TASK NUMBER 18');
 console.log('|');
-
+/*
+где проверка http:// 
+*/
 const secondTask = (value) => /^https?:\/\//.test(value);
+
+/*
+Внимательно прочитай условие задачи №4
+Определите, что ли заканчивается переданная строка расширением jpg или jpeg.
+*/
 const fourthTask = (value) => /(txt|html|php)$/.test(value);
+
+/*
+Внимательно прочитай условие задачи №6
+Определите, является ли строка числом, длиной от 1 до 12 цифр.
+*/
 const sixthTask = (value) => /[1-9]|1[0-2]/.test(value);
+
 const eighthTask = (value) => /^([0-2][0-9]|(3)[0-1])(.)(((0)[0-9])|((1)[0-2]))(.)\d{4}$/.test(value);
 
 // explanation here: https://stackoverflow.com/a/201378
